@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+  max-width: 350px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 32px;
+}
+
+.cont2 {
+  padding: 30px;
+}
+
+.image img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  color: hsl(223, 47%, 23%);
+}
+
+.text-box p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  color: hsl(228, 12%, 52%);
+  font-weight: 500;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 15px 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.info img {
+  width: 35px;
+}
+
+.plan {
+  margin-left: 15px;
+}
+
+.plan p {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.plan span {
+  color: hsl(228, 12%, 52%);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.info a {
+  margin-left: 90px;
+  color: hsl(245, 75%, 52%);
+  font-weight: 800;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+button {
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  box-shadow: 0px 10px 15px 0px hsl(245, 75%, 52%, 40%);
+  margin-bottom: 20px;
+}
+
+.last-pr a {
+  font-size: 12px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+button:hover,
+button:active {
+  background-color: hsla(245, 75%, 52%, 0.6);
+  cursor: pointer;
+}
+
+.info a:hover,
+.info a:active {
+  color: hsla(245, 75%, 52%, 0.6);
+  text-decoration: none;
+}
+
+.last-pr a:hover,
+.last-pr a:active {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+
+  .info a {
+    margin-left: 55px;
+  }
+
+  .plan p {
+    font-size: 12px;
+  }
+}
